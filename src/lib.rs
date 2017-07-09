@@ -1,4 +1,5 @@
-#[macro_use] extern crate enum_primitive;
+#[macro_use]
+extern crate enum_primitive;
 extern crate num;
 use std::fmt;
 
@@ -17,7 +18,7 @@ pub enum ISO4217 {
     BMD = 060,
     BTN = 064,
     BOB = 068,
-    BWP = 072,    
+    BWP = 072,
     BZD = 084,
     SBD = 090,
     BND = 096,
@@ -186,7 +187,7 @@ pub enum ISO4217 {
 }
 
 impl fmt::Display for ISO4217 {
-    fn fmt(&self,f: &mut fmt::Formatter) -> fmt::Result {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         use ISO4217::*;
         let r = match *self {
             AED => "UAE Dirham",
