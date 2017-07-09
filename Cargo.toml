@@ -3,6 +3,4 @@ name = "iso4217"
 version = "0.1.0"
 authors = ["xmeta <xmeta@users.noreply.github.com>"]
 
-[lib]
-name = "iso4217"
-path = "lib.rs"
+[dependencies]
